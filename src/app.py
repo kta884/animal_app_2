@@ -50,7 +50,7 @@ def predicts():
         if file and allwed_file(file.filename):
 
             #　画像ファイルに対する処理
-            #　画像書き込み用バッファを確保
+            #　画像読み込み用バッファを確保
             buf = io.BytesIO()
             image = Image.open(file).convert('RGB')
 
